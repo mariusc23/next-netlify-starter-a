@@ -1,6 +1,17 @@
-import Head from 'next/head'
-import Header from '@components/Header'
-import Footer from '@components/Footer'
+import Head from "next/head";
+import Header from "@components/Header";
+import Footer from "@components/Footer";
+
+export const metadata = {
+  url: "/",
+  openGraph: {
+    type: "website",
+    url: "/",
+    title: "m23.tv",
+    description: "AAA",
+    siteName: "m23.tv A",
+  },
+};
 
 export default function Home() {
   return (
@@ -19,5 +30,5 @@ export default function Home() {
 
       <Footer />
     </div>
-  )
+  );
 }
