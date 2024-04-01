@@ -3,7 +3,9 @@ import "@styles/globals.css";
 
 export const metadata = {
   metadataBase: new URL(
-    process.env.DEPLOY_PRIME_URL || "https://next-a.m23.tv/"
+    process.env.CONTEXT === "production"
+      ? "https://m23.tv"
+      : process.env.DEPLOY_PRIME_URL || "https://next-a.m23.tv/"
   ),
 };
 
